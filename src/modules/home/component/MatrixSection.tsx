@@ -116,7 +116,7 @@ function AnimatedCounter({
   decimals?: number;
 }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true });
 
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, {

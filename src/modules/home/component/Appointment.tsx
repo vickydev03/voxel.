@@ -57,7 +57,7 @@ export default function AppointmentSection() {
             Fill out the details below and our team will contact you shortly.
           </p>
 
-          <form action="https://formsubmit.co/ajaysingh242003@gmail.com"
+          <form action="https://formsubmit.co/voxelteleradiology@gmail.com"
   method="POST" className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Full Name */}
             <div className="flex flex-col gap-1.5">
