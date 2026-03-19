@@ -45,13 +45,15 @@ function Navbar() {
       >
         <div className="logo">
           {/* <h3 className="text-primary italic font-open-sauce">Vicky Akku</h3> */}
-          <Image
+         <Link href={"/"}>
+           <Image
             src={"/image/logo.jpg"}
             className="size-14"
             alt="img"
             height={100}
             width={100}
           />
+         </Link>
         </div>
         <div className=" hidden md:flex items-center gap-12">
           {items.map((e, i) => (
