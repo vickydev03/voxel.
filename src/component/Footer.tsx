@@ -32,19 +32,16 @@ export default function Footer() {
             to hospitals and clinics worldwide. 24/7 diagnostic excellence.
           </p>
           <div className="flex gap-4">
-            <a href="#" className="hover:text-blue-400 transition-colors">
+            <Link href="https://www.linkedin.com/posts/voxel-teleradiology-001703370_radiologisthiring-xrayreporting-teleradiology-activity-7399829720026161152-pHj2" className="hover:text-blue-400 transition-colors">
               <Linkedin size={20} />
-            </a>
-            <a href="#" className="hover:text-blue-400 transition-colors">
-              <Twitter size={20} />
-            </a>
-            <a href="#" className="hover:text-blue-400 transition-colors">
+            </Link>
+            <Link href="https://www.facebook.com/p/Voxel-Teleradiology-100085254052240/" className="hover:text-blue-400 transition-colors">
               <Facebook size={20} />
-            </a>
-            <a href="#" className="hover:text-blue-400 transition-colors">
+            </Link>
+            <Link href="https://www.instagram.com/voxelteleradiology/" className="hover:text-blue-400 transition-colors">
               <Instagram size={20} />
-            </a>
-          </div>
+            </Link>
+          </div>  
         </div>
 
         {/* Column 2: Quick Links */}
@@ -76,6 +73,12 @@ export default function Footer() {
                 AI-Enhanced Diagnostics
               </a>
             </li>
+            <li>
+              <Link href="/services/teleradiology/healthcare-it/" className="hover:text-white transition-colors">
+                It Solution
+              </Link>
+            </li>
+
           </ul>
         </div>
 

@@ -30,7 +30,7 @@ const voxelPartners = [
     designation: "Consultant Radiologist",
     organization: "CityCare Hospital",
     image:
-      "https://images.unsplash.com/photo-1594824388253-4d59a7f0a8d0?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=800&q=80",
     testimonial:
       "Voxel’s team delivers consistent quality reporting, especially during emergency and night-time studies.",
   },
@@ -39,7 +39,7 @@ const voxelPartners = [
     designation: "Head of Radiology Department",
     organization: "Advanced Diagnostic Institute",
     image:
-      "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=80",
     testimonial:
       "The level of professionalism and data security compliance makes Voxel a trusted reporting partner.",
   },

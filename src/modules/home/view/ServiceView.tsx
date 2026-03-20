@@ -132,7 +132,7 @@ export default function ServicesView() {
               Clinical Excellence
             </h1>
             <h2 className="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter mb-8 leading-[0.9]">
-              DIAGNOSTIC <span className="italic font-light">SPECIALTIES</span>
+              Teleradiology and IT <span className="italic font-light">SPECIALTIES</span>
             </h2>
             <p className="text-slate-500 text-lg max-w-2xl mx-auto leading-relaxed">
               Voxel Teleradiology provides a full spectrum of interpretive

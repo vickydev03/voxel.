@@ -1,19 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { motion, useInView, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useRef } from "react";
 
 function Hero() {
   const text = "";
   const letters = [
-    "Connecting ",
-    "Images ",
-    "to",
-    "Insights",
-    "—",
-    "Wherever",
+    "“Accuracy ",
+    "You ",
+    "Trust",
+    ",",
+    "Speed",
     "You",
-    "Are.",
+    // "Need",
   ];
   console.log(letters, 55);
 
@@ -57,7 +57,7 @@ function Hero() {
               transition={{ duration: 2, ease: [0.22, 1, 0.36, 1] }}
               className="text-sky-700 tracking-wider text-xs md:text-lg"
             >
-              "Quality Reports Minimal Time's"
+              "Quality Reports Minimal Time"
             </motion.p>
             <motion.h1
               initial="hidden"
@@ -85,7 +85,13 @@ function Hero() {
             className="flex items-center justify-center"
           >
             <Button className="rounded-full max-w-36 lg:max-w-48 py-5 lg:py-6 w-full cursor-pointer text-md tracking-widest gradient-color">
-              Contact Now
+              <Link
+                      href="https://wa.me/919588894040?text=I%20would%20like%20to%20partner%20with%20you."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                    Contact Now
+              </Link>
             </Button>
           </motion.div>
         </div>

@@ -21,17 +21,34 @@ export default function AboutPage() {
               <span className="text-slate-400">WITHOUT BORDERS.</span>
             </h1>
             <p className="text-xl text-slate-500 leading-relaxed mb-10 max-w-lg">
-              Voxel Teleradiology bridges the gap between complex imaging and
-              life-saving diagnosis. We combine elite human expertise with
-              seamless cloud technology.
+              Voxel Teleradiology provides 24×7 accurate and timely reporting
+              for X-ray, CT, MRI, ECG, EEG, TMT, PFT, OPG, CBCT, and PET scans.
+              We also offer Healthcare IT solutions including social media
+              management, website development & SEO, WhatsApp API integration,
+              and custom software for healthcare facilities—helping medical
+              businesses grow with technology.
             </p>
 
             <div className="flex flex-wrap gap-4">
               <button className="px-8 py-4 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 flex items-center gap-2">
-                Partner With Us <ArrowRight size={18} />
+                        <Link
+                        className="flex items-center gap-3"
+                        href="https://wa.me/919588894040?text=I%20would%20like%20to%20partner%20with%20you."
+                        target="_blank"
+                        rel="noopener noreferrer"
+>
+  Partner With Us <ArrowRight size={18} />
+</Link>
               </button>
               <button className="px-8 py-4 bg-white text-red-500 border-2 border-red-500 font-bold rounded-full hover:bg-red-50 transition-all">
-                Learn More
+                <Link
+  href="https://www.instagram.com/voxelteleradiology/"
+  className="flex items-center gap-3"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Learn More <ArrowRight size={18} />
+</Link>
               </button>
             </div>
           </div>
@@ -57,40 +74,39 @@ export default function AboutPage() {
       </section>
 
       {/* High-Impact Stats: Blue Dominant with Red Accents */}
-      
+
       <section
-  className="py-20 relative"
-  style={{
-    background: `linear-gradient(
+        className="py-20 relative"
+        style={{
+          background: `linear-gradient(
       120deg, 
       rgba(1, 174, 216, 0.3) 0%,   /* soft blue */
       rgba(255, 76, 76, 0.3) 50%,  /* soft red */
       rgba(255, 255, 255, 0.8) 100% /* mostly white */
     )`,
-  }}
->
-  <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12">
-    {[
-      { num: "24/7", label: "Global Coverage" },
-      { num: "STAT", label: "Under 30 Mins" },
-      { num: "50+", label: "Sub-Specialists" },
-      { num: "99.9%", label: "Clinical Accuracy" },
-    ].map((stat) => (
-      <div
-        key={stat.label}
-        className="border-l-2 border-white/20 pl-6 transition-transform hover:scale-105"
+        }}
       >
-        <div className="text-6xl md:text-7xl font-extrabold text-slate-900 mb-2">
-          {stat.num}
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12">
+          {[
+            { num: "24/7", label: "Global Coverage" },
+            { num: "STAT", label: "Under 30 Mins" },
+            { num: "50+", label: "Sub-Specialists" },
+            { num: "99.9%", label: "Clinical Accuracy" },
+          ].map((stat) => (
+            <div
+              key={stat.label}
+              className="border-l-2 border-white/20 pl-6 transition-transform hover:scale-105"
+            >
+              <div className="text-6xl md:text-7xl font-extrabold text-slate-900 mb-2">
+                {stat.num}
+              </div>
+              <div className="text-xs md:text-sm uppercase tracking-wider font-semibold text-slate-700">
+                {stat.label}
+              </div>
+            </div>
+          ))}
         </div>
-        <div className="text-xs md:text-sm uppercase tracking-wider font-semibold text-slate-700">
-          {stat.label}
-        </div>
-      </div>
-    ))}
-  </div>
-</section>
-
+      </section>
 
       {/* Core Values: Clean White Design */}
       <section className="py-32 px-6 max-w-7xl mx-auto bg-white">
@@ -116,12 +132,13 @@ export default function AboutPage() {
           <ValueCard
             icon={<Zap className="text-white" />}
             title="Rapid PACS Setup"
-            desc="Our technical team ensures HIPAA-compliant integration with your local EMR within 48 hours."
+            desc="Our technical team ensures HIPAA-compliant integration with your local EMR within 5 min."
+
           />
           <ValueCard
             icon={<ShieldCheck className="text-white" />}
-            title="Total Compliance"
-            desc="Full legal and medical indemnity coverage with 100% HIPAA-secure data storage."
+            title="Zero-Error Quality Assurance"
+            desc="Every report undergoes strict quality assurance ensuring zero errors and accuracy"
           />
         </div>
       </section>
@@ -136,22 +153,21 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             <button className="px-10 py-4 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-all shadow-xl shadow-blue-200">
               <Link
-  href="https://wa.me/919588894040?text=Hello%2C%20I%20would%20like%20to%20schedule%20a%20demo."
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Schedule a Demo
-</Link>
+                href="https://wa.me/919588894040?text=Hello%2C%20I%20would%20like%20to%20schedule%20a%20demo."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Schedule a Demo
+              </Link>
             </button>
             <button className="px-10 py-4 bg-white text-slate-900 border border-slate-200 font-bold rounded-xl hover:bg-slate-50 transition-all">
-              
               <Link
-  href="https://wa.me/919256862769?text=Hello"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Contact Sales
-</Link>
+                href="https://wa.me/919256862769?text=Hello"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Contact Sales
+              </Link>
             </button>
           </div>
         </div>

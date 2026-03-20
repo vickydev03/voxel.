@@ -57,15 +57,18 @@ export default function AppointmentSection() {
             Fill out the details below and our team will contact you shortly.
           </p>
 
-          <form action="https://formsubmit.co/voxelteleradiology@gmail.com"
-  method="POST" className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <form
+            action="https://formsubmit.co/voxelteleradiology@gmail.com"
+            method="POST"
+            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          >
             {/* Full Name */}
             <div className="flex flex-col gap-1.5">
               <label className="text-sm font-semibold text-slate-700">
                 Full Name
               </label>
               <input
-              name="name"
+                name="name"
                 type="text"
                 placeholder="John Doe"
                 className="input-style"
@@ -121,10 +124,11 @@ export default function AppointmentSection() {
                 Primary Inquiry
               </label>
               <select name="type" className="input-style bg-white">
-                <option>New Partnership Setup</option>
-                <option>Emergency STAT Coverage</option>
-                <option>Sub-specialty Overflow</option>
-                <option>Second Opinion Services</option>
+                <option>Transparent Pricing</option>
+                <option>Sample Reports</option>
+                <option>Demo / Trial Cases</option>
+                <option>Connect with Sales Team</option>
+                <option>Join as Doctor / Staff</option>
               </select>
             </div>
 

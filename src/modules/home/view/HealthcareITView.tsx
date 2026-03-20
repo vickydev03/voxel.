@@ -13,6 +13,7 @@ import {
   Cpu,
   ArrowRight
 } from "lucide-react";
+import Link from "next/link";
 
 const itServices = [
   {
@@ -148,7 +149,14 @@ export default function HealthcareITView() {
             </p>
           </div>
           <button className="bg-white text-slate-900 px-10 py-4 rounded-full font-bold hover:scale-105 transition-transform shadow-xl">
-            Request a Consultation
+            <Link
+                                    className="flex items-center gap-3"
+                                    href="https://wa.me/919588894040?text=Hii"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+            >
+              Request a Consultation
+            </Link>
           </button>
         </div>
       </section>
