@@ -61,12 +61,12 @@ const metrics = [
     label: "Critical Turnaround",
     subtext: "Average time for urgent findings",
     variants: {
-      hidden: { opacity: 0, scaleX: 0, originX: 0 },
+      hidden: { opacity: 0, x: -30, scaleX: 0.8 },
       show: {
         opacity: 1,
+        x: 0,
         scaleX: 1,
-        originX: 0,
-        transition: { duration: 0.6, ease: circOut },
+        transition: { duration: 0.7, ease: [0.23, 1, 0.32, 1] as const }, // Precise Cubic Bezier
       },
     },
   },
