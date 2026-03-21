@@ -113,21 +113,7 @@ const steps = [
     },
   },
 },
-  {
-    title: "Quality Review",
-    description:
-      "Structured reporting supported by internal quality assurance.",
-    icon: FileText,
-    // Animation: Floating Drift
-    variants: {
-      hidden: { opacity: 0, y: 100 },
-      show: {
-        opacity: 1,
-        y: 0,
-        transition: { duration: 0.9, type: "spring" as const, bounce: 0.4 },
-      },
-    },
-  },
+  
   {
     title: "Report Delivery",
     description: "Finalized reports delivered within predefined benchmarks.",
@@ -140,6 +126,21 @@ const steps = [
         scaleX: 1,
         originX: 0,
         transition: { duration: 0.8, ease: circOut },
+      },
+    },
+  },
+  {
+    title: "Multi-Platform Report Access",
+    description:
+      "Reports with DICOM images shared via mobile, email, and WhatsApp instantly",
+    icon: FileText,
+    // Animation: Floating Drift
+    variants: {
+      hidden: { opacity: 0, y: 100 },
+      show: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.9, type: "spring" as const, bounce: 0.4 },
       },
     },
   },

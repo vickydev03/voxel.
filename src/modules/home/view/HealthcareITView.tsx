@@ -56,7 +56,7 @@ const itServices = [
     title: "PACS Setup & Integration",
     description: "End-to-end implementation of Cloud PACS for seamless image storage, viewing, and remote reporting.",
     icon: <Cpu className="w-6 h-6" />,
-    image: "https://images.unsplash.com/photo-1576091160550-217359f4862c?auto=format&fit=crop&w=1200&q=80"
+    image: "https://plus.unsplash.com/premium_photo-1661402207553-28daf8ce1693?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ];
 
@@ -151,7 +151,7 @@ export default function HealthcareITView() {
           <button className="bg-white text-slate-900 px-10 py-4 rounded-full font-bold hover:scale-105 transition-transform shadow-xl">
             <Link
                                     className="flex items-center gap-3"
-                                    href="https://wa.me/919588894040?text=Hii"
+                                    href="https://wa.me/919588894040?text=Hello%20Voxel%20Healthcare%20IT%20Team%2C%20I%20am%20interested%20in%20your%20solutions.%20Can%20you%20guide%20me%3F"
                                     target="_blank"
                                     rel="noopener noreferrer"
             >

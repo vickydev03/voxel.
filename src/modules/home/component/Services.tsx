@@ -16,6 +16,15 @@ import Link from "next/link";
 
 export const services = [
   {
+    title: "X-Ray Reporting",
+    description:
+      "Accurate and rapid X-ray reporting for emergency and outpatient diagnostic evaluations.",
+    icon: <Activity className="w-6 h-6" />,
+    image:
+      "/image/x ray.webp",
+      demo:`${process.env.NEXT_PUBLIC_BASE_APP}/files/x-ray.pdf`
+  },
+  {
     title: "CT Scan Reporting",
     description:
       "Comprehensive interpretation of contrast and non-contrast CT studies with structured reporting.",
@@ -33,14 +42,13 @@ export const services = [
       demo:`${process.env.NEXT_PUBLIC_BASE_APP}/files/mri.pdf`
   },
   {
-    title: "Digital X-Ray Reporting",
-    description:
-      "Accurate and rapid X-ray reporting for emergency and outpatient diagnostic evaluations.",
-    icon: <Activity className="w-6 h-6" />,
-    image:
-      "/image/x ray.webp",
-      demo:`${process.env.NEXT_PUBLIC_BASE_APP}/files/x-ray.pdf`
-  },
+  title: "Mammography Reporting",
+  description:
+    "Specialized analysis of mammography scans to support early detection and accurate diagnosis of breast abnormalities.",
+  icon: <ShieldCheck className="w-6 h-6" />,
+  image:"/image/Mammography.webp",
+  demo:`${process.env.NEXT_PUBLIC_BASE_APP}/files/Mammography.pdf`
+},
   {
     title: "Ultrasound Reporting",
     description:
@@ -56,18 +64,11 @@ export const services = [
     "Expert interpretation of Treadmill Test (TMT) results to evaluate cardiac stress response and detect potential ischemic changes.",
   icon: <Zap className="w-6 h-6" />,
   image:
-    "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1200&q=80",
+    "/image/tmt.webp",
     
   demo:`${process.env.NEXT_PUBLIC_BASE_APP}/files/tmt.pdf`
 },
-{
-  title: "Mammography Reporting",
-  description:
-    "Specialized analysis of mammography scans to support early detection and accurate diagnosis of breast abnormalities.",
-  icon: <ShieldCheck className="w-6 h-6" />,
-  image:"https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80",
-  demo:`${process.env.NEXT_PUBLIC_BASE_APP}/files/Mammography.pdf`
-}
+
 ];
 
 function ServicesSection() {

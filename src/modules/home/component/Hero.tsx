@@ -13,7 +13,7 @@ function Hero() {
     ",",
     "Speed",
     "You",
-    // "Need",
+    "Need.",
   ];
   console.log(letters, 55);
 

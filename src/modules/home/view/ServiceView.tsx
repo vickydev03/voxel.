@@ -21,76 +21,87 @@ import Link from "next/link";
 // Service Data (Enhanced)
 export const services = [
   {
+    title: "Digital X-Ray Reporting",
+    description:
+      "Accurate and rapid X-ray reporting for emergency and outpatient diagnostic evaluations.",
+    icon: <Activity className="w-6 h-6" />,
+    image: "/image/x ray.webp",
+    demo: `${process.env.NEXT_PUBLIC_BASE_APP}/files/x-ray.pdf`,
+  },
+  {
     title: "CT Scan Reporting",
     description:
       "Comprehensive interpretation of contrast and non-contrast CT studies with structured reporting.",
     icon: <Scan className="w-6 h-6" />,
-    image:
-      "/image/ct scan.webp",
-      demo:`${process.env.NEXT_PUBLIC_BASE_APP}/files/ct-scan.pdf`
+    image: "/image/ct scan.webp",
+    demo: `${process.env.NEXT_PUBLIC_BASE_APP}/files/ct-scan.pdf`,
   },
   {
     title: "MRI Reporting",
     description:
       "Detailed MRI analysis across neuro, MSK, and spine with expert sub-specialist review.",
     icon: <Layers className="w-6 h-6" />,
-    image:
-      "/image/mri.webp",
-      demo:`${process.env.NEXT_PUBLIC_BASE_APP}/files/mri.pdf`
-    },
-  {
-    title: "Digital X-Ray Reporting",
-    description:
-      "Accurate and rapid X-ray reporting for emergency and outpatient diagnostic evaluations.",
-    icon: <Activity className="w-6 h-6" />,
-    image:
-      "/image/x ray.webp",
-      demo:`${process.env.NEXT_PUBLIC_BASE_APP}/files/x-ray.pdf`
+    image: "/image/mri.webp",
+    demo: `${process.env.NEXT_PUBLIC_BASE_APP}/files/mri.pdf`,
   },
+
   {
     title: "Mammography Reporting",
     description:
       "Accurate and rapid Mammography reporting for emergency and outpatient diagnostic evaluations.",
     icon: <Activity className="w-6 h-6" />,
-    image:
-      "/image/mammography.webp",
-      demo:`${process.env.NEXT_PUBLIC_BASE_APP}/files/mammography.pdf`
-  },
-  {
-    title: "OPG Reporting",
-    description:
-      "Accurate and rapid OPG reporting for emergency and outpatient diagnostic evaluations.",
-    icon: <Activity className="w-6 h-6" />,
-    image:
-      "/image/opg.webp",
-      demo:`${process.env.NEXT_PUBLIC_BASE_APP}/files/opg.pdf`
-  },
-  {
-    title: "TMT Reporting",
-    description:
-      "Accurate and rapid TMT reporting for emergency and outpatient diagnostic evaluations.",
-    icon: <Activity className="w-6 h-6" />,
-    image:
-      "/image/tmt.webp",
-      demo:`${process.env.NEXT_PUBLIC_BASE_APP}/files/tmt.pdf`
-  },
-  {
-    title: "EEG Reporting",
-    description:
-      "Accurate and rapid EEG reporting for emergency and outpatient diagnostic evaluations.",
-    icon: <Activity className="w-6 h-6" />,
-    image:
-      "/image/eeg.webp",
-      demo:`${process.env.NEXT_PUBLIC_BASE_APP}/files/eeg.pdf`
+    image: "/image/Mammography.webp",
+    demo: `${process.env.NEXT_PUBLIC_BASE_APP}/files/Mammography.pdf`,
   },
   {
     title: "ECG Reporting",
     description:
       "Accurate and rapid ECG reporting for emergency and outpatient diagnostic evaluations.",
     icon: <Activity className="w-6 h-6" />,
-    image:
-      "/image/ecg.webp",
-      demo:`${process.env.NEXT_PUBLIC_BASE_APP}/files/ecg.pdf`
+    image: "/image/ecg.webp",
+    demo: `${process.env.NEXT_PUBLIC_BASE_APP}/files/ecg.pdf`,
+  },
+  {
+    title: "EEG Reporting",
+    description:
+      "Accurate and rapid EEG reporting for emergency and outpatient diagnostic evaluations.",
+    icon: <Activity className="w-6 h-6" />,
+    image: "/image/eeg.webp",
+    demo: `${process.env.NEXT_PUBLIC_BASE_APP}/files/eeg.pdf`,
+  },
+
+  {
+    title: "OPG Reporting",
+    description:
+      "Accurate and rapid OPG reporting for emergency and outpatient diagnostic evaluations.",
+    icon: <Activity className="w-6 h-6" />,
+    image: "/image/opg.webp",
+    demo: `${process.env.NEXT_PUBLIC_BASE_APP}/files/opg.pdf`,
+  },
+  {
+  title: "CBCT Reporting",
+  description:
+    "High-resolution CBCT reporting for detailed 3D imaging, enabling precise diagnosis in dental and maxillofacial cases.",
+  icon: <Activity className="w-6 h-6" />,
+  image: "https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  demo: `${process.env.NEXT_PUBLIC_BASE_APP}/files/cbct.pdf`,
+},
+{
+  title: "PFT Reporting",
+  description:
+    "Comprehensive Pulmonary Function Test (PFT) reporting for accurate assessment of lung capacity and respiratory conditions.",
+  icon: <Activity className="w-6 h-6" />,
+  image: "/image/pft.webp",
+  demo: `${process.env.NEXT_PUBLIC_BASE_APP}/files/pft.pdf`,
+},
+
+  {
+    title: "TMT Reporting",
+    description:
+      "Accurate and rapid TMT reporting for emergency and outpatient diagnostic evaluations.",
+    icon: <Activity className="w-6 h-6" />,
+    image: "/image/tmt.webp",
+    demo: `${process.env.NEXT_PUBLIC_BASE_APP}/files/tmt.pdf`,
   },
 ];
 
@@ -132,7 +143,8 @@ export default function ServicesView() {
               Clinical Excellence
             </h1>
             <h2 className="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter mb-8 leading-[0.9]">
-              Teleradiology and IT <span className="italic font-light">SPECIALTIES</span>
+              Teleradiology and IT{" "}
+              <span className="italic font-light">SPECIALTIES</span>
             </h2>
             <p className="text-slate-500 text-lg max-w-2xl mx-auto leading-relaxed">
               Voxel Teleradiology provides a full spectrum of interpretive
@@ -179,18 +191,23 @@ export default function ServicesView() {
                     {service.description}
                   </p>
                   <div className="flex items-center font-bold text-xs tracking-widest uppercase cursor-pointer group/link">
-                    <Link href={service.demo} target="_blank" rel="noopener noreferrer">
-                                          <span
-                                            className="capitalize"
-                                            style={{
-                                              background: "linear-gradient(100deg, #01aed8, #ff4c4c)",
-                                              WebkitBackgroundClip: "text",
-                                              WebkitTextFillColor: "transparent",
-                                            }}
-                                          >
-                                            view demo
-                                          </span>
-                                      </Link>
+                    <Link
+                      href={service.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span
+                        className="capitalize"
+                        style={{
+                          background:
+                            "linear-gradient(100deg, #01aed8, #ff4c4c)",
+                          WebkitBackgroundClip: "text",
+                          WebkitTextFillColor: "transparent",
+                        }}
+                      >
+                        view demo
+                      </span>
+                    </Link>
                     <ArrowRight className="ml-2 w-4 h-4 text-red-500 transition-transform group-hover/link:translate-x-2" />
                   </div>
                 </div>
@@ -282,7 +299,13 @@ export default function ServicesView() {
           Ready to integrate Voxel?
         </h2>
         <button className="bg-black text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition-transform shadow-xl">
-          Get Started
+          <Link
+            href="https://wa.me/919588894040?text=Hello"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get Started
+          </Link>
         </button>
       </section>
     </main>

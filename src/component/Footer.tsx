@@ -32,16 +32,25 @@ export default function Footer() {
             to hospitals and clinics worldwide. 24/7 diagnostic excellence.
           </p>
           <div className="flex gap-4">
-            <Link href="https://www.linkedin.com/posts/voxel-teleradiology-001703370_radiologisthiring-xrayreporting-teleradiology-activity-7399829720026161152-pHj2" className="hover:text-blue-400 transition-colors">
+            <Link
+              href="https://www.linkedin.com/posts/voxel-teleradiology-001703370_radiologisthiring-xrayreporting-teleradiology-activity-7399829720026161152-pHj2"
+              className="hover:text-blue-400 transition-colors"
+            >
               <Linkedin size={20} />
             </Link>
-            <Link href="https://www.facebook.com/p/Voxel-Teleradiology-100085254052240/" className="hover:text-blue-400 transition-colors">
+            <Link
+              href="https://www.facebook.com/p/Voxel-Teleradiology-100085254052240/"
+              className="hover:text-blue-400 transition-colors"
+            >
               <Facebook size={20} />
             </Link>
-            <Link href="https://www.instagram.com/voxelteleradiology/" className="hover:text-blue-400 transition-colors">
+            <Link
+              href="https://www.instagram.com/voxelteleradiology/"
+              className="hover:text-blue-400 transition-colors"
+            >
               <Instagram size={20} />
             </Link>
-          </div>  
+          </div>
         </div>
 
         {/* Column 2: Quick Links */}
@@ -49,36 +58,44 @@ export default function Footer() {
           <h4 className="text-white font-bold mb-6">Our Services</h4>
           <ul className="space-y-4 text-sm">
             <li>
-              <a href="#" className="hover:text-white transition-colors">
+              <Link
+                href="/services/teleradiology"
+                className="hover:text-white transition-colors"
+              >
                 Emergency STAT Reporting
-              </a>
+              </Link>
             </li>
-            <li>
+            {/* <li>
               <a href="#" className="hover:text-white transition-colors">
                 Sub-Specialty Over-reads
               </a>
-            </li>
+            </li> */}
             <li>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="/about-us" className="hover:text-white transition-colors">
                 Night/Weekend Coverage
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition-colors">
+              <Link
+                href="/contact-us"
+                className="hover:text-white transition-colors"
+              >
                 Clinical Consultation
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="/services" className="hover:text-white transition-colors">
                 AI-Enhanced Diagnostics
               </a>
             </li>
             <li>
-              <Link href="/services/teleradiology/healthcare-it/" className="hover:text-white transition-colors">
+              <Link
+                href="/services/teleradiology/healthcare-it/"
+                className="hover:text-white transition-colors"
+              >
                 It Solution
               </Link>
             </li>
-
           </ul>
         </div>
 
@@ -87,27 +104,42 @@ export default function Footer() {
           <h4 className="text-white font-bold mb-6">Company</h4>
           <ul className="space-y-4 text-sm">
             <li>
-              <Link href="/about-us" className="hover:text-white transition-colors">
+              <Link
+                href="/about-us"
+                className="hover:text-white transition-colors"
+              >
                 About Voxel
               </Link>
             </li>
             <li>
-              <Link href="/join-as-radiologist" className="hover:text-white transition-colors">
+              <Link
+                href="/join-as-radiologist"
+                className="hover:text-white transition-colors"
+              >
                 Join Our Radiologist Network
               </Link>
             </li>
             <li>
-              <Link href="/case-studies" className="hover:text-white transition-colors">
+              <Link
+                href="/services/teleradiology"
+                className="hover:text-white transition-colors"
+              >
                 Case Studies
               </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition-colors">
+              <Link
+                href="/terms-of-service"
+                className="hover:text-white transition-colors"
+              >
                 Compliance & HIPAA
-              </a>
+              </Link>
             </li>
             <li>
-              <Link href="/contact-us" className="hover:text-white transition-colors">
+              <Link
+                href="/contact-us"
+                className="hover:text-white transition-colors"
+              >
                 Contact Support
               </Link>
             </li>
@@ -125,21 +157,27 @@ export default function Footer() {
               Rajasthan, India
             </span>
           </div>
-         <div className="flex items-center gap-3 text-sm">
-  <Phone size={18} className="text-blue-400 shrink-0" />
-  <span className="text-neutral-400">Office:</span>
-  <a href="tel:+919256862769" className="hover:text-blue-400 transition">
-    +91 9256862769
-  </a>
-</div>
+          <div className="flex items-center gap-3 text-sm">
+            <Phone size={18} className="text-blue-400 shrink-0" />
+            <span className="text-neutral-400">Office:</span>
+            <a
+              href="tel:+919256862769"
+              className="hover:text-blue-400 transition"
+            >
+              +91 9256862769
+            </a>
+          </div>
 
-<div className="flex items-center gap-3 text-sm">
-  <Phone size={18} className="text-blue-400 shrink-0" />
-  <span className="text-neutral-400">Management:</span>
-  <a href="tel:+919588894040" className="hover:text-blue-400 transition">
-    +91 9588894040
-  </a>
-</div>
+          <div className="flex items-center gap-3 text-sm">
+            <Phone size={18} className="text-blue-400 shrink-0" />
+            <span className="text-neutral-400">Management:</span>
+            <a
+              href="tel:+919588894040"
+              className="hover:text-blue-400 transition"
+            >
+              +91 9588894040
+            </a>
+          </div>
           <div className="flex items-center gap-3 text-sm">
             <Mail size={18} className="text-blue-400 shrink-0" />
             <span>voxelteleradiology@gmail.com</span>
