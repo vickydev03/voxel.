@@ -173,7 +173,7 @@ export default function ServicesView() {
                 <div className="relative h-64 w-full">
                   <Image
                     src={service.image}
-                    alt={service.title}
+                    alt={`${service.title} — Voxel Teleradiology reporting service`}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
@@ -184,9 +184,9 @@ export default function ServicesView() {
                 </div>
 
                 <div className="p-10">
-                  <h4 className="text-2xl font-bold mb-4 text-slate-900 transition-colors group-hover:text-blue-600">
+                  <h3 className="text-2xl font-bold mb-4 text-slate-900 transition-colors group-hover:text-blue-600">
                     {service.title}
-                  </h4>
+                  </h3>
                   <p className="text-slate-500 text-sm leading-relaxed mb-8">
                     {service.description}
                   </p>
@@ -231,7 +231,7 @@ export default function ServicesView() {
             {steps.map((step, i) => (
               <div key={i} className="relative">
                 <div className="text-blue-500 mb-6">{step.icon}</div>
-                <h5 className="font-bold text-lg mb-2">{step.title}</h5>
+                <h3 className="font-bold text-lg mb-2">{step.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
                   {step.desc}
                 </p>

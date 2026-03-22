@@ -1,4 +1,24 @@
+import type { Metadata } from "next";
 import React from 'react'
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "Voxel Teleradiology Privacy & Data Policy. Learn how we collect, use, safeguard, and disclose information including Protected Health Information (PHI) in compliance with HIPAA and applicable healthcare regulations.",
+  openGraph: {
+    title: "Privacy Policy | Voxel Teleradiology",
+    description:
+      "Our privacy and data protection practices for teleradiology services, HIPAA compliance, and PHI handling.",
+    url: "https://voxelteleradiology.com/privacy-policy",
+  },
+  alternates: {
+    canonical: "https://voxelteleradiology.com/privacy-policy",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 const sections = [
   {

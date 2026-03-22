@@ -56,7 +56,7 @@ const itServices = [
     title: "PACS Setup & Integration",
     description: "End-to-end implementation of Cloud PACS for seamless image storage, viewing, and remote reporting.",
     icon: <Cpu className="w-6 h-6" />,
-    image: "https://plus.unsplash.com/premium_photo-1661402207553-28daf8ce1693?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    image: "/image/pacs.avif"
   }
 ];
 
@@ -102,7 +102,7 @@ export default function HealthcareITView() {
                 <div className="relative h-60 w-full">
                   <Image
                     src={service.image}
-                    alt={service.title}
+                    alt={`${service.title} — Voxel Healthcare IT Solutions`}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
@@ -113,9 +113,9 @@ export default function HealthcareITView() {
                 </div>
 
                 <div className="p-10">
-                  <h4 className="text-2xl font-bold mb-4 text-slate-900 transition-colors group-hover:text-red-500">
+                  <h3 className="text-2xl font-bold mb-4 text-slate-900 transition-colors group-hover:text-red-500">
                     {service.title}
-                  </h4>
+                  </h3>
                   <p className="text-slate-500 text-sm leading-relaxed mb-8">
                     {service.description}
                   </p>
