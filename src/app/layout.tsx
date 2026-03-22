@@ -33,6 +33,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://voxelteleradiology.com"),
+  icons: {
+    icon: "/image/favicon.ico",
+  },
   title: {
     default:
       "Voxel Teleradiology | Outsource Radiology Reporting India — Reports in 10 Minutes",
