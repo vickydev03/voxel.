@@ -1,7 +1,9 @@
 import React from "react";
 import { Phone, Mail, Shield, Clock8 } from "lucide-react";
+import {handleSubmit} from "@/actions/ContactFormSubmit"
 
 export default function AppointmentSection() {
+  
   return (
     <section className="min-h-screen bg-slate-50 flex items-center justify-center p-6 py-12">
       <div className="max-w-6xl w-full bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row border border-slate-100">
@@ -48,7 +50,7 @@ export default function AppointmentSection() {
           </div>
         </div>
 
-        {/* Right Side: Professional Form */}
+        {/* Right Side:  Form */}
         <div className="w-full md:w-2/3 p-8 lg:p-12">
           <h3 className="text-2xl font-bold text-slate-800 mb-2">
             Book a Consultation
@@ -58,8 +60,9 @@ export default function AppointmentSection() {
           </p>
 
           <form
-            action="https://formsubmit.co/voxelteleradiology@gmail.com"
-            method="POST"
+            action={
+              handleSubmit
+            }
             className="grid grid-cols-1 md:grid-cols-2 gap-6"
           >
             {/* Full Name */}
