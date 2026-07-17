@@ -22,8 +22,8 @@ function Navbar() {
       href: "/contact-us",
     },
     {
-      label: "Demo's",
-      href: "/services/teleradiology",
+      label: "Login",
+      href: "https://upload.nandico.in/",
     },
     {
       label: "It Solution",
